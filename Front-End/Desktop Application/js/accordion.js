@@ -11,6 +11,7 @@ for (i = 0; i < acc.length; i++) {
         var panel = this.nextElementSibling;
         if (panel.style.display === "block") {
             panel.style.display = "none";
+            console.log(panel);
         } else {
             panel.style.display = "block";
         }
