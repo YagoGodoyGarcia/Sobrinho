@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Colocar o título aqui</title>
+        
+        <!-- Sobrinho CSS -->
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/cards.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/modal.css" rel="stylesheet">
+        <link href="css/circle.css" rel="stylesheet">
+        
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/progress-circle.js"></script>
+        
+    </head>
+    
+    <body>
+        <!-- Header do Sobrinho -->
+        <header class="header-body">
+            <div class="branding-logo">
+                <span style="color: white; align-content: center; font-size: 2em; ">
+                S
+                </span>
+            </div>
+            <div class="header-top"></div>
+        </header>
+        <!-- Fim do Header -->
+        <main style="height:auto">
+           <!-- Sidebar do Site -->
+            <aside class="sidebar-body">
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+            </aside>
+            <!-- Fim do Sidebar -->
+            <div class="content">
+                <!-- SEU CONTEÚDO AQUI -->
+                <div class="card card-6">
+                    <h1>Uso de Memória:</h1>
+                    <hr>
+                    <div id="circle"></div>
+                    <hr>
+                    <p style="text-align: center;">
+                        <strong>Total:</strong> <span>4gb</span>
+                    </p>
+                    
+                </div>
+                <div class="card card-6">
+                    <h1>Uso de Processador:</h1>
+                    <hr>
+                    <div id="circle2"></div>
+                    <hr>
+                </div>
+                <div class="card card-12">
+
+                </div>
+                
+            </div>
+        </main>
+        <script type="text/javascript" src="js/modal.js"></script>
+        <!-- Função Chumbada -->
+        <script>
+            ( function( $ ){
+                $( '#circle' ).progressCircle();
+
+                $( document ).ready(function() {
+                    var nPercent        = $( '#percent' ).val() ? $( '#percent' ).val() : 50;
+                    var showPercentText = $( '#percentOn' ).prop( 'checked' );
+                    var thickness       = $( '#thickness' ).val() ? $( '#thickness' ).val() : 1;
+                    var circleSize      = $( '#circle-size' ).val() ? $( '#circle-size' ).val() : 300;
+
+                    $( '#circle' ).progressCircle({
+                        nPercent        : nPercent,
+                        showPercentText : showPercentText,
+                        thickness       : thickness,
+                        circleSize      : circleSize
+                    });
+                })
+            })( jQuery );
+        </script>
+        <script>
+            ( function( $ ){
+                $( '#circle2' ).progressCircle();
+
+                $( document ).ready(function() {
+                    var nPercent        = $( '#percent' ).val() ? $( '#percent' ).val() : 35;
+                    var showPercentText = $( '#percentOn' ).prop( 'checked' );
+                    var thickness       = $( '#thickness' ).val() ? $( '#thickness' ).val() : 1;
+                    var circleSize      = $( '#circle-size' ).val() ? $( '#circle-size' ).val() : 300;
+
+                    $( '#circle2' ).progressCircle({
+                        nPercent        : nPercent,
+                        showPercentText : showPercentText,
+                        thickness       : thickness,
+                        circleSize      : circleSize
+                    });
+                })
+            })( jQuery );
+        </script>
+    </body>
+
+</html>
