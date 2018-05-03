@@ -20,7 +20,6 @@
     padding: 20px;
     border: 1px solid #888;
     width: 47.7%; /* Could be more or less, depending on screen size */
-    height: 40%;
 }
 
 .modal-content-medium {
@@ -28,7 +27,6 @@
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    height: 40%;
     width: 31.3%;
 }
 .modal-content-small {
@@ -36,7 +34,6 @@
     margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    height: 40%;
     width: 23.1%;    
 }
 .modal-header-medium{

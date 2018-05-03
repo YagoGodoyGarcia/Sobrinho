@@ -12,6 +12,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/modal.css" rel="stylesheet">
         <link href="css/circle.css" rel="stylesheet">
+        <link href="css/only-client.css" rel="stylesheet">
         
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -33,8 +34,8 @@
         <main style="height:auto">
            <!-- Sidebar do Site -->
             <aside class="sidebar-body">
-                <div class="sidebar-item"></div>
-                <div class="sidebar-item"></div>
+                <div id="myBtn1" class="sidebar-item"></div>
+                <div id="myBtn2" class="sidebar-item"></div>
                 <div class="sidebar-item"></div>
                 <div class="sidebar-item"></div>
                 <div class="sidebar-item"></div>
@@ -69,14 +70,58 @@
                     <button class="accordion">Abra um chamado!</button>
                     <div class="panel">
                         <textarea class="card-12" name="message" rows="2" placeholder="Descreva o Problema em sua maquina"></textarea>
-                        <div class="btn btn-large right btn-success">Abrir Chamado</div>
-                        
+                        <div class="btn btn-large right btn-success">Abrir Chamado</div>          
                     </div>
-
                 </div>
                 
             </div>
+            <div id="myModal1" class="modal ">
+                <!-- Modal content -->
+                <div class="modal-content-large ">
+                    <div class="modal-header-large">
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-content clearfix">
+                        <h3>Yago</h3>
+                        <input type="text">
+                        <br><br><br><br>
+                        <h3>Lambe</h3>
+                        <input type="text">
+                        <br><br><br><br>
+                        <h3>Linguiça</h3>
+                        <input type="text">
+                        <div class="btn btn-alert btn-small">Limpar</div>
+                        <div class="btn btn-success right btn-small">Salvar</div>
+                        <br><br><br><br>
+                    </div>    
+                </div>
+            </div>
+            <div id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content-medium ">
+                    <div class="modal-header-medium">
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-content clearfix">
+                        <h3>Login:</h3>
+                        <div>
+                            <input type="text">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>Senha:</h3>
+                            <input type="password">
+                            <div class="btn btn-alert btn-small">Limpar</div>
+                            <div class="btn right btn-small">Entrar</div>
+                        </div>
+                    </div> 
+                    <br>
+                    <br>
+                </div>
+            </div>
         </main>
+        
         <script type="text/javascript" src="js/modal.js"></script>
         <script type="text/javascript" src="js/accordion.js"></script>
         <!-- Função Chumbada - Temporário -->
