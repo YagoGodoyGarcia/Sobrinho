@@ -44,8 +44,18 @@
                 </div>
             </a>    
         </aside>
-		<div onclick="openModal()" class="card card-3" style="width:19%;">
-            <h1>Yago</h1>
+		<div onclick="openModal()" class="card card-3" style="width:19%;">			
+			<div style="width:100%;" >
+				<h3>Nome:</h3>
+				<br>
+			</div>
+			<div style="width:100%;">
+				<h3 >Login:</h3>
+				<br>
+			</div>	
+			<div style="width:100%;">
+				<h3>E-mail:</h3>
+			</div>			
         </div>        
         <div class="card card-3" onclick="openModal()" style="width:19%;"></div>
         <div class="card card-3" onclick="openModal()" style="width:19%;"></div>
@@ -54,16 +64,16 @@
         
         
         <div id="myModal" class="modal">    
-                    <!-- Modal content -->
-                    <div class="modal-content-medium">
-                        <div class="modal-header-medium">
-                            <span id ="close"class="close">&times;</span>
-                        </div>
-                        <div class="modal-content">
-                            <button onclick="myFunction()">Try it</button>
-                        </div>        
-                    </div>
+            <!-- Modal content -->
+            <div class="modal-content-medium">
+                <div class="modal-header-medium">
+                    <span id ="close"class="close">&times;</span>
                 </div>
+                <div class="modal-content">
+                    <button onclick="myFunction()">Try it</button>
+                </div>        
+            </div>
+        </div>
     </main>
     <script src="js/modal.js"></script>
 </body>
