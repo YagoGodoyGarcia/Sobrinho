@@ -24,81 +24,84 @@
             </span>
         </div>
         <div class="header-top"></div>
-    </header>    
+    </header>
     <!-- Fim do Header -->
     <main style="height:auto">
         <!-- Sidebar do Site -->
         <aside class="sidebar-body">
             <a href="sobrinhoADM.html">
-                <div class="sidebar-item" function="">               
-                                      
+                <div class="sidebar-item" function="">
+
                 </div>
             </a>
-            <a href="sobrinhoADM-User.html">    
-                <div class="sidebar-item">                
-                              
-                </div>
-            </a>
-            <a href="sobrinhoADM-Config.html">  
+            <a href="sobrinhoADM-User.html">
                 <div class="sidebar-item">
-                    
+
                 </div>
-            </a>    
+            </a>
+            <a href="sobrinhoADM-Config.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
         </aside>
-		<div onclick="openModal()" class="card card-3" style="width:19%;">			
-			<div style="width:100%;" >
-				<h3>Nome:</h3>
-				<br>
-			</div>
-			<div style="width:100%;">
-				<h3 >Login:</h3>
-				<br>
-			</div>	
-			<div style="width:100%;">
-				<h3>E-mail:</h3>
-			</div>			
-        </div>        
-        <div class="card card-3" onclick="openModal()" style="width:19%;">
-            <h1 style="font-size: 89px;">+</h1>
+        <div class="content">
+            <div onclick="openModal()" class="card card-3">
+                <div style="width:100%;">
+                    <h3>Nome:</h3>
+                    <br>
+                </div>
+                <div style="width:100%;">
+                    <h3>Login:</h3>
+                    <br>
+                </div>
+                <div style="width:100%;">
+                    <h3>E-mail:</h3>
+                </div>
+            </div>
+            <div class="card card-3" onclick="openModal()">
+                <h1 style="font-size: 89px;">+</h1>
+            </div>
+            <!-- Fim do Sidebar -->
+
+
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content-large">
+                    <div class="modal-header-medium">
+                        <span id="close" class="close">&times;</span>
+                    </div>
+                    <div class="modal-content">
+                        <div class="contForm">
+                            <h3 class="h3Form">Nome:</h3>
+                            <input type="text" value="" placeholder="Nome">
+                        </div>
+                        <div class="contForm">
+                            <h3 class="h3Form">Login:</h3>
+                            <input class="" type="text" value="" placeholder="Login">
+                            <br>
+                        </div>
+                        <div class="contForm">
+                            <h3 class="h3Form">E-mail:</h3>
+                            <input class="" type="text" value="" placeholder="E-mail">
+                            <br>
+                        </div>
+                        <div class="contForm">
+                            <h3 class="h3Form">Senha:</h3>
+                            <input class="" type="text" value="" placeholder="Senha">
+                        </div>
+                        <div class="contForm">
+                            <div style="margin-left: 20px;" class="btn btn-large btn-warning">Limpar</div>
+                        </div>
+                        <div class="contForm">
+                            <div style="margin-left: 20px;" class="btn btn-large btn-success">Limpar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Fim do Sidebar -->
-        
-        
-        <div id="myModal" class="modal">    
-            <!-- Modal content -->
-            <div class="modal-content-large">
-                <div class="modal-header-medium">
-                    <span id ="close"class="close">&times;</span>
-                </div>
-                <div class="modal-content">
-                    <div class="contForm" >
-                        <h3 class="h3Form">Nome:</h3>
-                        <input type="text" value="" placeholder="Pesquise Nome/CPF">
-                    </div>
-                    <div class="contForm">
-                        <h3 class="h3Form">Login:</h3>
-                        <input class="" type="text" value="" placeholder="Pesquise Nome/CPF">
-                        <br>
-                    </div>	
-                    <div class="contForm">
-                        <h3 class="h3Form">E-mail:</h3>
-                        <input class="" type="text" value="" placeholder="Pesquise Nome/CPF">
-                        <br>
-                    </div>	
-                    <div class="contForm">
-                        <h3 class="h3Form">Senha:</h3>
-                        <input class="" type="text" value="" placeholder="Pesquise Nome/CPF">
-                    </div>
-                    <div class="contForm">
-                        <div style="margin-left: 20px;" class="btn btn-large btn-warning">Limpar</div>
-                    </div>
-                    <div class="contForm">
-                        <div style="margin-left: 20px;" class="btn btn-large btn-success">Limpar</div>
-                    </div>
-                </div>
-            </div>    		
-        </div>        
     </main>
     <script src="js/modal.js"></script>
 </body>
+
 </html>
