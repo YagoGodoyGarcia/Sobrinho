@@ -1,0 +1,58 @@
+/** 
+ * This CSS class is maded By Cristian Paixão and Yago Godoy
+ * Here is configured the classes for content of sobrinho system
+ * If you don't made idea of whats is this, don be a sucker, don't touch in here.
+ */
+
+/* SITE CONTENT */
+
+.content {
+    float: left;
+    width: 97.2%;
+    min-height: 100px; 
+}
+
+.card-12 {
+    float: left;
+    width: 90%;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    min-height:  50px;
+    padding: 1.5%;
+}
+
+.card-6 {
+    float: left;
+    width: 44.71%;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    min-height: 50px;
+    padding: 1.5%;
+}
+
+.card-4 {
+    float: left;
+    width: 27%;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    min-height: 50px;
+    padding: 1.5%;
+}
+
+.card-3 {
+    float: left;
+    width: 20.1%;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    min-height: 50px;
+    padding: 1.5%;
+}
+
+@media only screen and (min-width: 675x) {
+    /* For Tablets */
+    .content {
+    float: left;
+    width: 95.2%;
+    min-height: 100px; 
+    }
+}

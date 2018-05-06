@@ -1,0 +1,14 @@
+.h3Form{
+    float: left;
+    margin-top:5%;
+    padding-left: 20px;
+}
+input{
+    margin-top: 3%;
+    padding: 5px;    
+}
+.contForm{
+    width:50%;
+    float: left;
+    padding-top: 30px;
+}
