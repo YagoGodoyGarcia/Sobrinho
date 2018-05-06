@@ -11,6 +11,7 @@
     <link href="css/cards.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
+    <link href="css/style-Form.css" rel="stylesheet">
 
 </head>
 
@@ -57,23 +58,46 @@
 				<h3>E-mail:</h3>
 			</div>			
         </div>        
-        <div class="card card-3" onclick="openModal()" style="width:19%;"></div>
-        <div class="card card-3" onclick="openModal()" style="width:19%;"></div>
-		<div class="card card-3" onclick="openModal()" style="width:19%;"></div>
+        <div class="card card-3" onclick="openModal()" style="width:19%;">
+            <h1 style="font-size: 89px;">+</h1>
+        </div>
         <!-- Fim do Sidebar -->
         
         
         <div id="myModal" class="modal">    
             <!-- Modal content -->
-            <div class="modal-content-medium">
+            <div class="modal-content-large">
                 <div class="modal-header-medium">
                     <span id ="close"class="close">&times;</span>
                 </div>
                 <div class="modal-content">
-                    <button onclick="myFunction()">Try it</button>
-                </div>        
-            </div>
-        </div>
+                    <div class="contForm" >
+                        <h3 class="h3Form">Nome:</h3>
+                        <input type="text" value="" placeholder="Pesquise Nome/CPF">
+                    </div>
+                    <div class="contForm">
+                        <h3 class="h3Form">Login:</h3>
+                        <input class="" type="text" value="" placeholder="Pesquise Nome/CPF">
+                        <br>
+                    </div>	
+                    <div class="contForm">
+                        <h3 class="h3Form">E-mail:</h3>
+                        <input class="" type="text" value="" placeholder="Pesquise Nome/CPF">
+                        <br>
+                    </div>	
+                    <div class="contForm">
+                        <h3 class="h3Form">Senha:</h3>
+                        <input class="" type="text" value="" placeholder="Pesquise Nome/CPF">
+                    </div>
+                    <div class="contForm">
+                        <div style="margin-left: 20px;" class="btn btn-large btn-warning">Limpar</div>
+                    </div>
+                    <div class="contForm">
+                        <div style="margin-left: 20px;" class="btn btn-large btn-success">Limpar</div>
+                    </div>
+                </div>
+            </div>    		
+        </div>        
     </main>
     <script src="js/modal.js"></script>
 </body>

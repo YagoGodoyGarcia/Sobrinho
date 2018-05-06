@@ -103,7 +103,6 @@ body {
     min-width: 100px;
     max-width: 100px;
 }
-
 .btn-medium {
     min-width: 150px;
     max-width: 150px;
@@ -266,4 +265,26 @@ p {
     margin-bottom: 1%;
     font-size: 1.2em;
 }
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 6%;
+}
 
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #5C6BC0;
+    color: white;
+}
