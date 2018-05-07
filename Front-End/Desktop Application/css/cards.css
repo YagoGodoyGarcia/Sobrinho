@@ -48,11 +48,212 @@
     padding: 1.5%;
 }
 
-@media only screen and (min-width: 675x) {
-    /* For Tablets */
+@media only screen and (max-width: 1800px) {
     .content {
+        float: left;
+        width: 97.1%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 1740px) {
+    .content {
+        float: left;
+        width: 97%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 1681px) {
+    .content {
+        float: left;
+        width: 96.2%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .content {
+        float: left;
+        width: 96%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 1265px) {
+    .content {
+        float: left;
+        width: 95.5%;
+        min-height: 100px; 
+    }
+}
+@media only screen and (max-width: 1125px) {
+    .content {
+        float: left;
+        width: 95%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    .content {
+        float: left;
+        width: 94.5%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 925px) {
+    .content {
+        float: left;
+        width: 94%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .content {
+        float: left;
+        width: 93.5%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    .content {
+        float: left;
+        width: 93%;
+        min-height: 100px; 
+    }
+    
+    .card-6 {
     float: left;
-    width: 95.2%;
-    min-height: 100px; 
+    width: 94%;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    min-height:  height: 50px;
+    padding: 1.5%;
+    }
+    
+    .card-4 {
+    float: left;
+    width: 94%;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    min-height:  height: 50px;
+    padding: 1.5%;
+    }
+    
+    .card-3 {
+    float: left;
+    width: 94%;
+    margin-top: 1.5%;
+    margin-left: 1.5%;
+    min-height:  height: 50px;
+    padding: 1.5%;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .content {
+        float: left;
+        width: 92.5%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .content {
+        float: left;
+        width: 92%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .content {
+        float: left;
+        width: 91.5%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 605px) {
+    .content {
+        float: left;
+        width: 91%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .content {
+        float: left;
+        width: 90.5%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 545px) {
+    .content {
+        float: left;
+        width: 90%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .content {
+        float: left;
+        width: 89.5%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .content {
+        float: left;
+        width: 89%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .content {
+        float: left;
+        width: 88.5%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .content {
+        float: left;
+        width: 88%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 433px) {
+    .content {
+        float: left;
+        width: 87%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .content {
+        float: left;
+        width: 86%;
+        min-height: 100px; 
+    }
+}
+
+@media only screen and (max-width: 373px) {
+    .content {
+        float: left;
+        width: 85%;
+        min-height: 100px; 
     }
 }

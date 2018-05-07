@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+   
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Sobrinho</title>
+        
+        <!-- Sobrinho CSS -->
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/cards.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/modal.css" rel="stylesheet">
+        <link href="css/circle.css" rel="stylesheet">
+        <link href="css/only-client.css" rel="stylesheet">
+        
+        <!-- Scripts -->
+        <script>window.$ = window.jQuery = require('jquery');</script>
+        <script src="js/systemcolector.js"></script>
+        <script src="js/progress-circle.js"></script>
+        
+    </head>
+    
+    <body>
+        <!-- Header do Sobrinho -->
+        <header class="header-body">
+            <div class="branding-logo">
+                <span style="color: white; align-content: center; font-size: 2em; ">
+                S
+                </span>
+            </div>
+            <div class="header-top"></div>
+        </header>
+        <!-- Fim do Header -->
+        <main style="height:auto">
+           <!-- Sidebar do Site -->
+            <aside class="sidebar-body">
+                <div id="myBtn1" class="sidebar-item"></div>
+                <div id="myBtn2" class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+                <div class="sidebar-item"></div>
+            </aside>
+            <!-- Fim do Sidebar -->
+            <div class="content">
+                <!-- SEU CONTEÚDO AQUI -->
+                <div class="card card-6">
+                    <h1>Uso de Memória:</h1>
+                    <hr>
+                    <div id="circle"></div>
+                    <hr>
+                    <p class="center">
+                        <strong>Total:</strong> <span id="memory-total">4gb</span>
+                    </p>
+                    
+                </div>
+                <div class="card card-6">
+                    <h1>Uso de Processador:</h1>
+                    <hr>
+                    <div id="circle2"></div>
+                    <hr>
+                    <p class="center">
+                        <strong>Modelo:</strong> <span id="cpu-model">Core I5 7th Gen</span>
+                    </p>
+                </div>
+                <div class="card card-12">
+                    <button class="accordion">Abra um chamado!</button>
+                    <div class="panel">
+                        <textarea class="card-12" name="message" rows="2" placeholder="Descreva o Problema em sua maquina"></textarea>
+                        <div class="btn btn-large right btn-success">Abrir Chamado</div>          
+                    </div>
+                </div>
+                
+            </div>
+            <div id="myModal1" class="modal ">
+                <!-- Modal content -->
+                <div class="modal-content-large ">
+                    <div class="modal-header-large">
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-content clearfix">
+                        <br><br>
+                        <h3>Nome do Computador:</h3>
+                        <input type="text">
+                        <br><br><br><br>
+                        <h3>Id Team Viewer:</h3>
+                        <input type="text">
+                        <br><br><br><br>
+                        <h3>Memória Ram Total:</h3>
+                        <input type="text">
+                        <br><br><br><br>
+                        <h3>Disco Rígido Total:</h3>
+                        <input type="text">
+                        <div class="btn btn-alert btn-small">Limpar</div>
+                        <div class="btn btn-success right btn-small">Salvar</div>
+                        <br><br><br><br><br><br><br>
+                    </div>    
+                </div>
+            </div>
+            <div id="myModal2" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content-medium ">
+                    <div class="modal-header-medium">
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-content clearfix">
+                        <br><br>
+                        <h3>Login:</h3>
+                        <div>
+                            <input type="text">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3>Senha:</h3>
+                            <input type="password">
+                            <br><br><br><br>
+                            <div class="btn btn-alert btn-small">Limpar</div>
+                            <div class="btn right btn-small">Entrar</div>
+                            <br><br><br><br><br>
+                        </div>
+                    </div> 
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </main>
+        
+        <script type="text/javascript" src="js/modal.js"></script>
+        <script type="text/javascript" src="js/accordion.js"></script>
+        <!-- Função Chumbada - Temporário -->
+        <script type="text/javascript" src="js/circle1.js"> </script>
+        <script type="text/javascript" src="js/circle2.js"></script>
+    </body>
+
+</html>
