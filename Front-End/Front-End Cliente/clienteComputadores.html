@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Colocar o título aqui</title>
+
+    <!-- Sobrinho CSS -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/cards.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+    <link href="css/style-Form.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header do Sobrinho -->
+    <header class="header-body">
+        <div class="branding-logo">
+            <span style="color: white; align-content: center; font-size: 2em; ">
+                S
+            </span>
+        </div>
+        <div class="header-top"></div>
+    </header>
+    <!-- Fim do Header -->
+    <main style="height:auto">
+        <!-- Sidebar do Site -->
+        <aside class="sidebar-body">
+            <a href="clienteComputadores.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+            <a href="clienteRelatorios.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+            <a href="clienteConfig.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+        </aside>
+        <div class="content">
+            <div onclick="openModal()" class="card card-3" style="width:19%;">
+                <div style="width:100%;">
+					<h2>Máquina 1</h2>
+					<hr>
+                    <h3>Nome do Computador:</h3>
+					<p>NOME DO COMPUTADOR</p>
+                    <br>
+                </div>
+                <div style="width:100%;">
+                    <h3>Estado do Computador:</h3>
+					<p>LIGADO/DESLIGADO</p>
+                </div>
+            </div>
+            <div class="card card-3" onclick="openModal()" style="width:19%;">
+                <h1 style="font-size: 89px;">+</h1>
+            </div>
+
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content-small" style="height: 55%;">
+                    <div class="modal-header-medium">
+                        <span id="close" class="close">&times;</span>
+                    </div>
+                    <div class="modal-content">
+                        <div class="card12">
+                            <h3 class="h3Form">Nome do Computador:</h3>
+                            <input style="width: 90%" type="text" value="" placeholder="Nome do Computador">
+                        
+                            <h3 class="h3Form">Quantidade de Memória RAM Total:</h3>
+                            <input style="width: 90%" class="" type="text" value="" placeholder="Memória RAM">
+                            <br>
+                        
+                            <h3 class="h3Form">Tamanho do HD:</h3>
+                            <input style="width: 90%" class="" type="text" value="" placeholder="HD">
+                            <br>
+							<div class="card-12">
+                            <div style="align-content: left" class="btn btn-small btn-warning">Limpar</div>
+							
+                            <div style="align-content: right" class="btn btn-small btn-success">Salvar</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

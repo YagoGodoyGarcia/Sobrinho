@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Colocar o título aqui</title>
+
+  <!-- Sobrinho CSS -->
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/cards.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/modal.css" rel="stylesheet">
+  <link href="css/style-Form.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Header do Sobrinho -->
+  <header class="header-body">
+    <div class="branding-logo">
+      <span style="color: white; align-content: center; font-size: 2em; ">
+        S
+      </span>
+    </div>
+    <div class="header-top"></div>
+  </header>
+  <!-- Fim do Header -->
+  <main style="height:auto">
+    <!-- Sidebar do Site -->
+    <aside class="sidebar-body">
+      <a href="clienteComputadores.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+            <a href="clienteRelatorios.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+            <a href="clienteConfig.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+    </aside>
+    <div class="content">
+      <div class="card card-6">
+        <h2>Informações da Conta</h2>
+        <hr>
+        <div class="contForm">
+          <h3 class="h3Form">Nome:</h3>
+          <input type="text" value="" placeholder="Nome">
+        </div>
+        <div class="contForm">
+          <h3 class="h3Form">Senha:</h3>
+          <input class="" type="text" value="" placeholder="Senha">
+        </div>
+        <div class="contForm">
+          <h3 class="h3Form">E-mail:</h3>
+          <input class="" type="text" value="" placeholder="E-mail">
+        </div>
+        <div class="contForm">
+          <h3 class="h3Form">CEP </h3>
+          <input class="" type="text" value="" placeholder="CEP">
+        </div>
+        <div class="contForm">
+          <h3 class="h3Form">Nº:</h3>
+          <input class="" type="text" value="" placeholder="Número do Logradouro">
+        </div>
+        <div class="contForm">
+          <h3 class="h3Form">Telefone </h3>
+          <input class="" type="text" value="" placeholder="Telefone">
+        </div>
+        <div class="contForm">
+          <h3 class="h3Form">CPF </h3>
+          <input class="" type="text" value="" placeholder="CPF">
+        </div>
+        <div class="contForm">
+		<h3 class="h3Form"> </h3>
+          <br>
+		  <br>
+		  <br>
+        </div>
+        <div class="contForm">
+          <div style="align-content: left" class="btn btn-large btn-warning">Limpar</div>
+        </div>
+        <div class="contForm">
+          <div style="align-content: right" class="btn btn-large btn-success">Salvar</div>
+        </div>
+      </div>
+      
+		<div class="card card-3">
+			<h2>Cartão</h2>
+			<hr>
+                <div class="card-12">
+					<h3>Nome do Titular:</h3>
+					<p>NOME DO TITULAR</p>
+				</div>
+				
+				<div class="card-12">
+					<h3>Número do Cartão:</h3>
+					<p>NÚMERO DO CARTÃO</p>
+				</div>
+		</div>
+		
+		<div class="card card-3" onclick="openModal()" style="width:19%;">
+                <h1 style="font-size: 89px;">+</h1>
+            </div>
+
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content-large" style="height: 90%;">
+                    <div class="modal-header-medium">
+                        <span id="close" class="close">&times;</span>
+                    </div>
+                    <div class="modal-content">
+                        <div class="card12">
+                            <div class="contForm" style="width: 100%">
+								<h3 class="h3Form">Titular:</h3>
+								<input type="text" value="" placeholder="Titular" style="width: 90%">
+							</div>
+							<div class="contForm" style="width: 100%">
+								<h3 class="h3Form">Número do Cartão:</h3>
+								<input class="" type="number" value="" placeholder="Número do Cartão" style="width: 90%">
+							</div>
+							<div class="contForm" style="width: 100%">
+								<h3 class="h3Form">Mês de Vencimento:</h3>
+								<input class="" type="number" value="" placeholder="Mês de Vencimento">
+							</div>
+							<div class="contForm" style="width: 100%">
+								<h3 class="h3Form">Ano de Vencimento:</h3>
+								<input class="" type="number" value="" placeholder="Ano de Vencimento">
+							</div>
+							<div class="contForm" style="width: 100%">
+								<h3 class="h3Form">Código de Segurança:</h3>
+								<input class="" type="number" value="" placeholder="Código de Segurança">
+							</div>
+							<div class="contForm">
+								<div style="align-content: left" class="btn btn-large btn-warning">Limpar</div>
+							</div>
+							<div class="contForm">
+								<div style="align-content: right" class="btn btn-large btn-success">Salvar</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+	  
+      <!-- Fim do Sidebar -->
+  </main>
+  <script src="js/modal.js"></script>
+</body>
+
+</html>
