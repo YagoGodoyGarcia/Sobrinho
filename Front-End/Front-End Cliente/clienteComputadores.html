@@ -46,53 +46,68 @@
             </a>
         </aside>
         <div class="content">
-            <div onclick="openModal()" class="card card-3" style="width:19%;">
-                <div style="width:100%;">
-					<h2>Máquina 1</h2>
-					<hr>
-                    <h3>Nome do Computador:</h3>
-					<p>NOME DO COMPUTADOR</p>
-                    <br>
-                </div>
-                <div style="width:100%;">
-                    <h3>Estado do Computador:</h3>
-					<p>LIGADO/DESLIGADO</p>
-                </div>
+            <div onclick="openModal()" class="card card-3">
+                <h3 class="textoCard">Nome:</h3>
+                <h3 class="textoCard">Estado:</h3>
             </div>
-            <div class="card card-3" onclick="openModal()" style="width:19%;">
-                <h1 style="font-size: 89px;">+</h1>
+            <div class="card card-3" onclick="openModal()">
+                <h1 class="textoAdd">+</h1>
             </div>
 
             <div id="myModal" class="modal">
                 <!-- Modal content -->
-                <div class="modal-content-small" style="height: 55%;">
+                <div class="modal-content-large clearfix">
                     <div class="modal-header-medium">
                         <span id="close" class="close">&times;</span>
                     </div>
                     <div class="modal-content">
-                        <div class="card12">
-                            <h3 class="h3Form">Nome do Computador:</h3>
-                            <input style="width: 90%" type="text" value="" placeholder="Nome do Computador">
-                        
-                            <h3 class="h3Form">Quantidade de Memória RAM Total:</h3>
-                            <input style="width: 90%" class="" type="text" value="" placeholder="Memória RAM">
-                            <br>
-                        
-                            <h3 class="h3Form">Tamanho do HD:</h3>
-                            <input style="width: 90%" class="" type="text" value="" placeholder="HD">
-                            <br>
-							<div class="card-12">
-                            <div style="align-content: left" class="btn btn-small btn-warning">Limpar</div>
-							
-                            <div style="align-content: right" class="btn btn-small btn-success">Salvar</div>
-							</div>
-						</div>
+                        <table>
+                            <tr>
+                                <td class="tdlbl">
+                                    <h3 class="h3Form ">Nome:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="contForm" type="text" value="" placeholder="Nome do Computador">
+                                </td>
+
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">RAM:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="contForm" type="text" value="" placeholder="Total de RAM">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">HD:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="contForm" type="text" value="" placeholder="Tamanho HD">
+                                </td>
+
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Status:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="contForm" type="text" value="" placeholder="ligado/desligado">
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="tdbtn">
+                                    <div class="btn btn-large btn-warning">Limpar</div>
+                                </td>
+                                <td class="tdbtn">
+                                    <div class="btn btn-large btn-success">Salvar</div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
     <script src="js/modal.js"></script>
 </body>
 

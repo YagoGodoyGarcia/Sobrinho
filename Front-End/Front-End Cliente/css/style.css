@@ -234,7 +234,7 @@ hr {
 
 .clearfix {
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
 }
 
 /* Text Types */
