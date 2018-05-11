@@ -46,60 +46,81 @@
             </a>
         </aside>
         <div class="content">
-            <div onclick="openModal()" class="card card-3" style="width:19%;">
-                <div style="width:100%;">
-                    <h3>Cliente:</h3>
-                    <br>
-                </div>
-                <div style="width:100%;">
-                    <h3>Computador:</h3>
-                    <br>
-                </div>
-                <div style="width:100%;">
-                    <h3>Estado:</h3>
-                </div>
+            <div onclick="openModal()" class="card card-3">
+                <h3 class="textoCard">Cliente:</h3>
+                <h3 class="textoCard">Computador:</h3>
+                <h3 class="textoCard">Estado:</h3>
             </div>
-            <div class="card card-3" onclick="openModal()" style="width:19%;">
-                <h1 style="font-size: 89px;">+</h1>
+            <div class="card card-3" onclick="openModal()">
+                <h1 class="textoAdd">+</h1>
             </div>
 
             <div id="myModal" class="modal">
                 <!-- Modal content -->
-                <div class="modal-content-large" style="height: 55%;">
+                <div class="modal-content-large clearfix">
                     <div class="modal-header-medium">
                         <span id="close" class="close">&times;</span>
                     </div>
                     <div class="modal-content">
-                        <div class="contForm">
-                            <h3 class="h3Form">Nome:</h3>
-                            <input type="text" value="" placeholder="Nome Cliente">
-                        </div>
-                        <div class="contForm">
-                            <h3 class="h3Form">Estado:</h3>
-                            <input class="" type="text" value="" placeholder="Ligado/Desligado">
-                            <br>
-                        </div>
-                        <div class="contForm">
-                            <h3 class="h3Form">Computador:</h3>
-                            <input class="" type="text" value="" placeholder="Nome Computador">
-                            <br>
-                        </div>
-                        <div class="contForm">
-                            <h3 class="h3Form">Id Team Viewer</h3>
-                            <input class="" type="text" value="" placeholder="Id do TW do Cliente">
-                        </div>
-                        <div class="card-12">
-                            <h3>Descrição do Problema</h3>
-                            <textarea rows="5" cols="100" style="width: 100%;">
+                         <table class="tbModalAnalista">
+                            <tr>
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Nome:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input type="text" value="" placeholder="Nome Cliente">
+                                </td>
+
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Estado:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="" type="text" value="" placeholder="Ligado/Desligado">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Computador:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="" type="text" value="" placeholder="Nome Computador">
+                                </td>
+
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Id TV:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="" type="text" value="" placeholder="Id do TW do Cliente">
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="tbModalAnalista">
+                                <tr>
+                                    <td class="tdlbl">
+                                        <h3 class="h3Form">Descrição do Problema</h3>
+                                    </td>
+                                    <td class="tdvaleu">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tdlbl">
+                                            <textarea rows="5" cols="100" style="width: 100%;">
                          
-                            </textarea>
-                        </div>
-                        <div class="contForm">
-                            <div style="margin-left: 40px;" class="btn btn-large btn-warning">Limpar</div>
-                        </div>
-                        <div class="contForm">
-                            <div style="margin-left: 20px;" class="btn btn-large btn-success">Limpar</div>
-                        </div>
+                                                </textarea>
+                                    </td>
+                                </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="tdbtn">
+                                    <div class="btn btn-large btn-warning">Limpar</div>
+                                </td>
+                                <td class="tdbtn">
+                                    <div class="btn btn-large btn-success">Salvar</div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,40 @@
-.h3Form{
-    float: left;
-    margin-top:5%;
+/*Para Forms Dentro de Card*/
+.tdlblCard{
     padding-left: 20px;
+    padding-top: 30px;
 }
-input{
-    margin-top: 3%;
-    padding: 5px;    
+.tdbtnCard{
+    padding-top: 30px;
+    padding-left: 40px;
+}
+/*Para Modais*/
+.tdlbl{
+    padding-left: 40px;
+    padding-top: 30px;
+}
+.tdvaleu{
+    padding-left: 15px;
+    padding-top: 30px;
 }
 .contForm{
-    width:50%;
-    float: left;
+    padding: 8px;
+}
+.textoCard{
+	padding:14px;
+}
+.textoAdd{
+	font-size: 89px;
+}
+.tdbtn{
     padding-top: 30px;
+    padding-left: 60px;
+}
+.h3Form{
+    float: left;
+}
+.tbModalAnalista{
+    margin-left: -5%;
+}
+.novoBanco{
+    font-size: 35px;
 }

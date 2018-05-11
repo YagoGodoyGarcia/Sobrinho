@@ -49,86 +49,148 @@
       <div class="card card-6">
         <h2>Informações da Conta</h2>
         <hr>
-        <div class="contForm">
-          <h3 class="h3Form">Nome:</h3>
-          <input type="text" value="" placeholder="Nome">
-        </div>
-        <div class="contForm">
-          <h3 class="h3Form">Senha:</h3>
-          <input class="" type="text" value="" placeholder="Senha">
-        </div>
-        <div class="contForm">
-          <h3 class="h3Form">E-mail:</h3>
-          <input class="" type="text" value="" placeholder="E-mail">
-        </div>
-        <div class="contForm">
-          <h3 class="h3Form">Cep </h3>
-          <input class="" type="text" value="" placeholder="Cep">
-        </div>
-        <div class="contForm">
-          <h3 class="h3Form">Nº:</h3>
-          <input class="" type="text" value="" placeholder="Numero do Logradouro">
-        </div>
-        <div class="contForm">
-          <h3 class="h3Form">Telefone </h3>
-          <input class="" type="text" value="" placeholder="Telefone">
-        </div>
-        <div class="contForm">
-          <h3 class="h3Form">CPF </h3>
-          <input class="" type="text" value="" placeholder="CPF">
-        </div>
-        <div class="contForm">
-          <h3 class="h3Form">Status </h3>
-          <input class="" type="text" value="" placeholder="Status amalista">
-        </div>
-        <div class="contForm">
-          <div style="margin-left: 40px;" class="btn btn-large btn-warning">Limpar</div>
-        </div>
-        <div class="contForm">
-          <div style="margin-left: 20px;" class="btn btn-large btn-success">Limpar</div>
-        </div>
+        <table>
+          <tr>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Nome:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input type="text" value="" placeholder="Nome">
+            </td>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Senha:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="Senha">
+            </td>
+          </tr>
+          <tr>
+            <td class="tdlblCard">
+              <h3 class="h3Form">E-mail:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="E-mail">
+            </td>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Cep:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="Cep">
+            </td>
+          </tr>
+          <tr>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Nº:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="Numero do Logradouro">
+            </td>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Telefone:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="Telefone">
+            </td>
+          </tr>
+          <tr>
+            <td class="tdlblCard">
+              <h3 class="h3Form">CPF:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="CPF">
+            </td>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Status:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="Status amalista">
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td class="tdbtnCard">
+              <div style="align-content: left" class="btn btn-large btn-warning">Limpar</div>
+            </td>
+            <td class="tdbtnCard">
+              <div style="align-content: right" class="btn btn-large btn-success">Salvar</div>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div class="card card-6" onclick="openInfConta()">
-        <h1>Bradesco</h1>
-      </div>
-      <div id="Bradesco" class="card card-6" style="display:none">
-        <div class="contForm">
-          <h3 class="h3Form">Banco:</h3>
-          <input type="text" value="" placeholder="Nome do Banco">
+      <div class="card card-3" onclick="openModal()">
+          <h1>Bradesco</h1>
         </div>
-        <div class="contForm">
-          <h3 class="h3Form">Tipo Conta:</h3>
-          <input class="" type="text" value="" placeholder="Corrente/Poupança">
+        <div class="card card-3" onclick="openModal()">
+          <h1 class="novoBanco">+</h1>
         </div>
-        <div class="contForm">
-          <h3 class="h3Form">Agência:</h3>
-          <input class="" type="text" value="" placeholder="E-mail">
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content-large">
+          <div class="modal-header-medium">
+            <span id="close" class="close">&times;</span>
+          </div>
+          <div class="modal-content">
+            <table class="tbModalAnalista">
+              <tr>
+                <td class="tdlbl">
+                  <h3 class="h3Form">Banco:</h3>
+                </td>
+                <td class="tdvaleu">
+                  <input type="text" value="" placeholder="Nome do Banco">
+                </td>
+                <td class="tdlbl">
+                  <h3 class="h3Form">Tipo Conta:</h3>
+                </td>
+                <td class="tdvaleu">
+                  <input class="" type="text" value="" placeholder="Corrente/Poupança">
+                </td>
+              </tr>
+              <tr>
+                <td class="tdlbl">
+                  <h3 class="h3Form">Agência:</h3>
+                </td>
+                <td class="tdvaleu">
+                  <input class="" type="text" value="" placeholder="Agância">
+                </td>
+                <td class="tdlbl">
+                  <h3 class="h3Form">Conta</h3>
+                </td>
+                <td class="tdvaleu">
+                  <input class="" type="text" value="" placeholder="N° da Conta">
+                </td>
+              </tr>
+              <tr>
+                <td class="tdlbl">
+                  <h3 class="h3Form">Nome:</h3>
+                </td>
+                <td class="tdvaleu">
+                  <input class="" type="text" value="" placeholder="Nome do Beneficiário">
+                </td>
+                <td class="tdlbl">
+                  <h3 class="h3Form">CPF </h3>
+                </td>
+                <td class="tdvaleu">
+                  <input class="" type="text" value="" placeholder="CPF do Beneficiáro">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="tdbtn">
+                  <div class="btn btn-large btn-warning">Limpar</div>
+                </td>
+                <td class="tdbtn">
+                  <div class="btn btn-large btn-success">Salvar</div>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
-        <div class="contForm">
-          <h3 class="h3Form">Conta</h3>
-          <input class="" type="text" value="" placeholder="N° da Conta">
-        </div>
-        <div class="contForm">
-          <h3 class="h3Form">Nome:</h3>
-          <input class="" type="text" value="" placeholder="Nome do Beneficiário">
-        </div>
-        <div class="contForm">
-          <h3 class="h3Form">CPF </h3>
-          <input class="" type="text" value="" placeholder="cPF do Beneficiáro">
-        </div>
-        <div class="contForm">
-          <div style="margin-left: 40px;" class="btn btn-large btn-warning">Limpar</div>
-        </div>
-        <div class="contForm">
-          <div style="margin-left: 20px;" class="btn btn-large btn-success">Limpar</div>
-        </div>
-      </div>
-      <div class="card card-6">
-        <h1 style="font-size: 50px;">+</h1>
       </div>
       <!-- Fim do Sidebar -->
   </main>
-  <script src="js/abasContaBancaria.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
