@@ -177,7 +177,7 @@ input[type=radio], input[type=checkbox] {
 input:focus{
     box-shadow: 0 0 0 0;
     border: 0 none;
-    border-bottom: 1px solid #3F51B5;
+    border-bottom: 1px solid #303F9F;
     outline: 0;
 }
 /* Horizontal Rule - Divider */
@@ -234,7 +234,7 @@ hr {
 
 .clearfix {
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
 }
 
 /* Text Types */

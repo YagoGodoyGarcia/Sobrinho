@@ -47,24 +47,14 @@
         </aside>
         <div class="content">
             <div onclick="openModal()" class="card card-3">
-                <div style="width:100%;">
-                    <h3>Nome:</h3>
-                    <br>
-                </div>
-                <div style="width:100%;">
-                    <h3>Login:</h3>
-                    <br>
-                </div>
-                <div style="width:100%;">
-                    <h3>E-mail:</h3>
-                </div>
+                <h3 class="textoCard">Nome:</h3>
+                <h3 class="textoCard">Login:</h3>
+                <h3 class="textoCard">E-mail:</h3>
             </div>
             <div class="card card-3" onclick="openModal()">
                 <h1 style="font-size: 89px;">+</h1>
             </div>
             <!-- Fim do Sidebar -->
-
-
             <div id="myModal" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content-large">
@@ -72,30 +62,48 @@
                         <span id="close" class="close">&times;</span>
                     </div>
                     <div class="modal-content">
-                        <div class="contForm">
-                            <h3 class="h3Form">Nome:</h3>
-                            <input type="text" value="" placeholder="Nome">
-                        </div>
-                        <div class="contForm">
-                            <h3 class="h3Form">Login:</h3>
-                            <input class="" type="text" value="" placeholder="Login">
-                            <br>
-                        </div>
-                        <div class="contForm">
-                            <h3 class="h3Form">E-mail:</h3>
-                            <input class="" type="text" value="" placeholder="E-mail">
-                            <br>
-                        </div>
-                        <div class="contForm">
-                            <h3 class="h3Form">Senha:</h3>
-                            <input class="" type="text" value="" placeholder="Senha">
-                        </div>
-                        <div class="contForm">
-                            <div style="margin-left: 20px;" class="btn btn-large btn-warning">Limpar</div>
-                        </div>
-                        <div class="contForm">
-                            <div style="margin-left: 20px;" class="btn btn-large btn-success">Limpar</div>
-                        </div>
+                        <table>
+                            <tr>
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Nome:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input type="text" value="" placeholder="Nome">
+                                </td>
+
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Login:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="" type="text" value="" placeholder="Login">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">E-mail:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="" type="text" value="" placeholder="E-mail">
+                                </td>
+
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Senha:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="" type="text" value="" placeholder="Senha">
+                                </td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="tdbtn">
+                                    <div class="btn btn-large btn-warning">Limpar</div>
+                                </td>
+                                <td class="tdbtn">
+                                    <div class="btn btn-large btn-success">Salvar</div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
