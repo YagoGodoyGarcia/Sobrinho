@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Colocar o título aqui</title>
+
+    <!-- Sobrinho CSS -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/cards.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+    <link href="css/style-Form.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header do Sobrinho -->
+    <header class="header-body">
+        <div class="branding-logo">
+            <span style="color: white; align-content: center; font-size: 2em; ">
+                S
+            </span>
+        </div>
+        <div class="header-top"></div>
+    </header>
+    <!-- Fim do Header -->
+    <main style="height:auto">
+        <!-- Sidebar do Site -->
+        <aside class="sidebar-body">
+            <a href="analistaChamados.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+            <a href="analistaRelatorios.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+            <a href="analistaConfig.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+        </aside>
+        <div class="content">
+            <div onclick="openModal()" class="card card-3">
+                <h3 class="textoCard">Cliente:</h3>
+                <h3 class="textoCard">Computador:</h3>
+                <h3 class="textoCard">Estado:</h3>
+            </div>
+            <div class="card card-3" onclick="openModal()">
+                <h1 class="textoAdd">+</h1>
+            </div>
+
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content-large clearfix">
+                    <div class="modal-header-medium">
+                        <span id="close" class="close">&times;</span>
+                    </div>
+                    <div class="modal-content">
+                         <table class="tbModalAnalista">
+                            <tr>
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Nome:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input type="text" value="" placeholder="Nome Cliente">
+                                </td>
+
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Estado:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="" type="text" value="" placeholder="Ligado/Desligado">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Computador:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="" type="text" value="" placeholder="Nome Computador">
+                                </td>
+
+                                <td class="tdlbl">
+                                    <h3 class="h3Form">Id TV:</h3>
+                                </td>
+                                <td class="tdvaleu">
+                                    <input class="" type="text" value="" placeholder="Id do TW do Cliente">
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="tbModalAnalista">
+                                <tr>
+                                    <td class="tdlbl">
+                                        <h3 class="h3Form">Descrição do Problema</h3>
+                                    </td>
+                                    <td class="tdvaleu">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tdlbl">
+                                            <textarea rows="5" cols="100" style="width: 100%;">
+                         
+                                                </textarea>
+                                    </td>
+                                </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td class="tdbtn">
+                                    <div class="btn btn-large btn-warning">Limpar</div>
+                                </td>
+                                <td class="tdbtn">
+                                    <div class="btn btn-large btn-success">Salvar</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

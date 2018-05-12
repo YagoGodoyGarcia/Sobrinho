@@ -1,0 +1,90 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content-large {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 25px;
+    border: 1px solid #888;
+    width: 47.7%; /* Could be more or less, depending on screen size */
+    min-height: 40%;
+    margin-top: 7%;
+}
+
+.modal-content-medium {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    height: 40%;
+    border: 1px solid #888;
+    width: 31.3%;
+    margin-top: 7%;
+}
+.modal-content-small {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    height: 40%;
+    border: 1px solid #888;
+    width: 23.1%; 
+    margin-top: 7%;   
+}
+.modal-header-medium{
+    width: 108%;
+    height: 50px;
+    margin:-4%;
+    background: #5C6BC0;
+}
+.modal-header-large{
+    width: 105.5%;
+    height: 50px;
+    margin:-2.75%;
+    background: #5C6BC0;
+}
+.modal-header-small{
+    width: 111%;
+    height: 50px;
+    margin:-5.5%;
+    background: #5C6BC0;
+}
+.modal-content{
+    padding-top: 30px;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+    margin-right: 3%;
+    margin-top: 1%;
+}
+
+.title {
+    color: #aaa;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 2.2%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

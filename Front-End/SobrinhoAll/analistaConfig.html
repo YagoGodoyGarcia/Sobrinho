@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Colocar o título aqui</title>
+
+  <!-- Sobrinho CSS -->
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/cards.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/modal.css" rel="stylesheet">
+  <link href="css/style-Form.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Header do Sobrinho -->
+  <header class="header-body">
+    <div class="branding-logo">
+      <span style="color: white; align-content: center; font-size: 2em; ">
+        S
+      </span>
+    </div>
+    <div class="header-top"></div>
+  </header>
+  <!-- Fim do Header -->
+  <main style="height:auto">
+    <!-- Sidebar do Site -->
+    <aside class="sidebar-body">
+      <a href="analistaChamados.html">
+        <div class="sidebar-item">
+
+        </div>
+      </a>
+      <a href="analistaRelatorios.html">
+        <div class="sidebar-item">
+
+        </div>
+      </a>
+      <a href="analistaConfig.html">
+        <div class="sidebar-item">
+
+        </div>
+      </a>
+    </aside>
+    <div class="content">
+      <div class="card card-6">
+        <h2>Informações da Conta</h2>
+        <hr>
+        <table>
+          <tr>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Nome:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input type="text" value="" placeholder="Nome">
+            </td>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Senha:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="Senha">
+            </td>
+          </tr>
+          <tr>
+            <td class="tdlblCard">
+              <h3 class="h3Form">E-mail:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="E-mail">
+            </td>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Cep:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="Cep">
+            </td>
+          </tr>
+          <tr>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Nº:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="Numero do Logradouro">
+            </td>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Telefone:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="Telefone">
+            </td>
+          </tr>
+          <tr>
+            <td class="tdlblCard">
+              <h3 class="h3Form">CPF:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="CPF">
+            </td>
+            <td class="tdlblCard">
+              <h3 class="h3Form">Status:</h3>
+            </td>
+            <td class="tdvaleu">
+              <input class="" type="text" value="" placeholder="Status amalista">
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td class="tdbtnCard">
+              <div style="align-content: left" class="btn btn-large btn-warning">Limpar</div>
+            </td>
+            <td class="tdbtnCard">
+              <div style="align-content: right" class="btn btn-large btn-success">Salvar</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="card card-3" onclick="openModal()">
+          <h1>Bradesco</h1>
+        </div>
+        <div class="card card-3" onclick="openModal()">
+          <h1 class="novoBanco">+</h1>
+        </div>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content-large">
+          <div class="modal-header-medium">
+            <span id="close" class="close">&times;</span>
+          </div>
+          <div class="modal-content">
+            <table class="tbModalAnalista">
+              <tr>
+                <td class="tdlbl">
+                  <h3 class="h3Form">Banco:</h3>
+                </td>
+                <td class="tdvaleu">
+                  <input type="text" value="" placeholder="Nome do Banco">
+                </td>
+                <td class="tdlbl">
+                  <h3 class="h3Form">Tipo Conta:</h3>
+                </td>
+                <td class="tdvaleu">
+                  <input class="" type="text" value="" placeholder="Corrente/Poupança">
+                </td>
+              </tr>
+              <tr>
+                <td class="tdlbl">
+                  <h3 class="h3Form">Agência:</h3>
+                </td>
+                <td class="tdvaleu">
+                  <input class="" type="text" value="" placeholder="Agância">
+                </td>
+                <td class="tdlbl">
+                  <h3 class="h3Form">Conta</h3>
+                </td>
+                <td class="tdvaleu">
+                  <input class="" type="text" value="" placeholder="N° da Conta">
+                </td>
+              </tr>
+              <tr>
+                <td class="tdlbl">
+                  <h3 class="h3Form">Nome:</h3>
+                </td>
+                <td class="tdvaleu">
+                  <input class="" type="text" value="" placeholder="Nome do Beneficiário">
+                </td>
+                <td class="tdlbl">
+                  <h3 class="h3Form">CPF </h3>
+                </td>
+                <td class="tdvaleu">
+                  <input class="" type="text" value="" placeholder="CPF do Beneficiáro">
+                </td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td class="tdbtn">
+                  <div class="btn btn-large btn-warning">Limpar</div>
+                </td>
+                <td class="tdbtn">
+                  <div class="btn btn-large btn-success">Salvar</div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- Fim do Sidebar -->
+  </main>
+  <script src="js/modal.js"></script>
+</body>
+
+</html>

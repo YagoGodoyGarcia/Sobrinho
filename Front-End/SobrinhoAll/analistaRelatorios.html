@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Colocar o título aqui</title>
+
+    <!-- Sobrinho CSS -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/cards.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+    <link href="css/style-Form.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header do Sobrinho -->
+    <header class="header-body">
+        <div class="branding-logo">
+            <span style="color: white; align-content: center; font-size: 2em; ">
+                S
+            </span>
+        </div>
+        <div class="header-top"></div>
+    </header>
+    <!-- Fim do Header -->
+    <main style="height:auto">
+        <!-- Sidebar do Site -->
+        <aside class="sidebar-body">
+            <a href="analistaChamados.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+            <a href="analistaRelatorios.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+            <a href="analistaConfig.html">
+                <div class="sidebar-item">
+
+                </div>
+            </a>
+        </aside>
+        <div class="content">
+            <div id="btnAtendimentos" class="card menuAbas" onclick="openCliente()">
+                <h3 onclick="openCliente()">Atendimentos</h3>
+            </div>
+            <div id="btnLucro" class="card menuAbas" onclick="openAnalista()" style="margin-left:0.3%;">
+                <h3 onclick="openAnalista()">Lucros</h3>
+            </div>
+            <div id="atendimentos" style="display:block;margin-top:0%;" class="card card-12">
+                <input class="" type="text" value="" placeholder="Pesquise Nome/CPF">
+                <table id="customers">
+                    <tr>
+                        <th>Data de Abertura</th>
+                        <th>Problema Encontrado</th>
+                        <th>Estado(Cancelado ou Concluído)</th>
+                        <th>Cliente</th>
+                    </tr>
+                    <tr>
+                        <td>01/02/2018</td>
+                        <td>Alto consumo de memória ram</td>
+                        <td>Concluído</td>
+                        <td>Cris Baitola</td>
+                    </tr>
+                    <tr>
+                        <td>01/02/2018</td>
+                        <td>Alto consumo de memória ram</td>
+                        <td>Concluído</td>
+                        <td>Cris Baitola</td>
+                    </tr>
+                    <tr>
+                        <td>01/02/2018</td>
+                        <td>Alto consumo de memória ram</td>
+                        <td>Concluído</td>
+                        <td>Cris Baitola</td>
+                    </tr>
+                    <tr>
+                        <td>01/02/2018</td>
+                        <td>Alto consumo de memória ram</td>
+                        <td>Concluído</td>
+                        <td>Cris Baitola</td>
+                    </tr>
+                    <tr>
+                        <td>01/02/2018</td>
+                        <td>Alto consumo de memória ram</td>
+                        <td>Concluído</td>
+                        <td>Cris Baitola</td>
+                    </tr>
+                    <tr>
+                        <td>01/02/2018</td>
+                        <td>Alto consumo de memória ram</td>
+                        <td>Concluído</td>
+                        <td>Cris Baitola</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="lucro" style="display:none;margin-top:0%;" class="card card-12">
+                <input class="" type="text" value="" placeholder="Pesquise Nome/CPF">
+                <table id="customers">
+                    <tr>
+                        <th>Data</th>
+                        <th>Número de Chamados</th>
+                        <th>Receita Total</th>
+                    </tr>
+                    <tr>
+                        <td>07/02/2018</td>
+                        <td>8</td>
+                        <td>R$ 500,00</td>
+                    </tr>
+                    <tr>
+                        <td>07/02/2018</td>
+                        <td>8</td>
+                        <td>R$ 500,00</td>
+                    </tr>
+                    <tr>
+                        <td>07/02/2018</td>
+                        <td>8</td>
+                        <td>R$ 500,00</td>
+                    </tr>
+                    <tr>
+                        <td>07/02/2018</td>
+                        <td>8</td>
+                        <td>R$ 500,00</td>
+                    </tr>
+                    <tr>
+                        <td>07/02/2018</td>
+                        <td>8</td>
+                        <td>R$ 500,00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="js/abasAnalista.js"></script>
+</body>
+
+</html>
