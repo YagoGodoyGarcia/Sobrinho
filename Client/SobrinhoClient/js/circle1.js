@@ -1,12 +1,8 @@
-const sc = require('/home/cristian/Documents/Repositories/Sobrinho/Sobrinho/Client/SobrinhoClient/js/systemcolector');
-var memory = sc.getMem();
-console.log(memory);
-var percent = 55;
 ( function( $ ){
     $( '#circle' ).progressCircle();
 
     $( document ).ready(function() {
-        var nPercent        = $( '#percent' ).val() ? $( '#percent' ).val() : percent;
+        var nPercent        = $( '#percent' ).val() ? $( '#percent' ).val() : Math.floor((Math.random() * 100) + 1);;
         var showPercentText = $( '#percentOn' ).prop( 'checked' );
         var thickness       = $( '#thickness' ).val() ? $( '#thickness' ).val() : 1;
         var circleSize      = $( '#circle-size' ).val() ? $( '#circle-size' ).val() : 300;
@@ -14,8 +10,24 @@ var percent = 55;
         $( '#circle' ).progressCircle({
             nPercent        : nPercent,
             showPercentText : showPercentText,
-            thickness       : 1,
+            thickness       : thickness,
             circleSize      : circleSize
         });
     })
 })( jQuery );
+
+
+var percent = 10;
+(function runForever(){
+    $( '#circle' ).progressCircle({
+        nPercent        : $( '#percent' ).val() ? $( '#percent' ).val() : percent,
+        showPercentText : $( '#percentOn' ).prop( 'checked' ),
+        thickness       : 1,
+        circleSize      : $( '#circle-size' ).val() ? $( '#circle-size' ).val() : 300
+    });
+    
+    setTimeout(runForever, 1000)
+    console.log(percent);
+    percent = Math.round((memoryUse / memoryTotal) * 100);
+    
+})()

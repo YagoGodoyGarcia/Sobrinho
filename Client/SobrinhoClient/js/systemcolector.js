@@ -5,7 +5,6 @@ module.exports = {
     getMem: function() {
         try {
             const data = si.mem();
-            console.log(data);
             return data
         } catch (e) {
             console.log(e)
@@ -18,5 +17,22 @@ module.exports = {
         } catch (e) {
             console.log(e)
         }
+    },
+    getMemJson: async function() {
+        try {
+            const data = await si.mem();
+            return  data.total;
+        } catch(e) {
+            console.log(e)
+        }
+    },
+    getLoad: async function() {
+        try {
+            var load = await si.currentLoad();
+            return load;
+        } catch(e) {
+            console.log(e)
+        }
     }
 }
+
